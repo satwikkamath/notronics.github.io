@@ -293,6 +293,7 @@
             width: 35ch;
             letter-spacing: normal;
             left: 8%;
+            top: 22%;
         }
 }
 @media only screen and (max-width:300px)
@@ -311,5 +312,6 @@
             width: 35ch;
             letter-spacing: normal;
             left: 1%;
+            top: 22%;
         }
 }
