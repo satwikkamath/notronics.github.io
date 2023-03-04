@@ -296,7 +296,7 @@
             top: 22%;
         }
 }
-@media only screen and (max-width:300px)
+@media only screen and (max-width:350px)
 {
         .carouselText1{
             font-size: 14px;
