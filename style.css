@@ -343,3 +343,42 @@
 .card-title, .cgMinButton{
     margin:13px;
 }
+
+
+.choose{
+    color: white;
+    padding-top: 5%;
+}
+
+.border-bottom{
+    border-bottom: 2px solid white;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 15px 15px rgb(51, 55, 59);
+}
+
+.semChoose{
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.semDisplay{
+    display: none;
+}
+
+@keyframes anim1 {
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.animation{
+    animation: anim1 1.5s ease-in-out;
+}

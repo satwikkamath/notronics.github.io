@@ -32,9 +32,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#carouselExampleAutoplaying">Home</a>
-                    <a class="nav-link" href="#studymaterial">Study Materials</a>
-                    <a class="nav-link" href="#mincal">Minimum Marks Calculator</a>
-                    <a class="nav-link" href="#cgcal">GPA Calculator</a>
+                    <a class="nav-link" id="scrollStudy" href="#studymaterialForThirdSem">Study Materials</a>
+                    <a class="nav-link" id="scrollMincal" href="#mincal3">Minimum Marks Calculator</a>
+                    <a class="nav-link" id="scrollCgcal" href="#cgcal3">GPA Calculator</a>
                     <a class="nav-link" href="#contact">Contact</a>
                     <a class="nav-link" href="https://parents.msrit.edu/" target="_blank">SIS Portal</a>
                 </div>
@@ -75,567 +75,1201 @@
         </button>
     </div>
 
+    <div class="bg-dark choose" id="choose">
+        <div class="container text-center">
+            <div class="row">
 
 
 
-    <section id="studymaterial" class="material bg-dark">
-        <h1 class="heading">Study Materials</h1>
-        <div class="row">
-            <div class="col-lg-6 col-md-6">
-                <div id="card1" class="card reveal1">
+                <a href="#choose" class="col border-bottom semChoose" id="sem3" onclick="choose3Sem()">
+                    <h3 style="padding: 10px;">
+                        Third Semester
+                    </h3>
+                </a>
+                <a href="#choose" class="col semChoose" id="sem4" onclick="choose4Sem()">
+                    <h3 style="padding: 10px;">
+                        Fourth Semester
+                    </h3>
+                </a>
 
-                    <div class="card-body">
-                        <h5 class="card-title">EC31 - Transform Techniques and Linear Programming </h5>
-                        <p class="card-text">Find previous year question papers, prescribed books, and notes of the
-                            above subject by clicking below.</p>
 
 
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Click Me
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1DJYHztrGu_fZVAV-d8XfCrprXtRc-_Kz" target="_blank">Notes</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1z4zapsOR2MvePPRhLoVJEf12pntDQekh" target="_blank">Books</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1soWYCTILJgkuenJBYDBrJWYaWeSvpfVu" target="_blank">Previous
-                                        Year Question Papers</a></li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
             </div>
-            <div class="col-lg-6 col-md-6">
-                <div id="card2" class="card reveal2">
-                    <div class="card-body">
-                        <h5 class="card-title">EC32 - Data Structures Using C++</h5>
-                        <p class="card-text">Find previous year question papers, prescribed books, and notes of the
-                            above subject by clicking below.</p>
-
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Click Me
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1Eq6F9fM8q7FbYGyz7dIVIsIjeU_zQwrx" target="_blank">Notes</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1v9c1FkJ5cjWd2mE8HmHrTeAk2hbg77Xo" target="_blank">Books</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/117ktbvRZakw15OQcjKCnLQ34eYfDZCdg" target="_blank">Previous
-                                        Year Question Papers</a></li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div id="card3" class="card reveal1">
-                    <div class="card-body">
-                        <h5 class="card-title">EC33 - Analog Electronics Circuits</h5>
-                        <p class="card-text">Find previous year question papers, prescribed books, and notes of the
-                            above subject by clicking below.</p>
-
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Click Me
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1Y0wwjgpQCna4nVQEVUZI6kq14SDoXlV5" target="_blank">Notes</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/18K4axoohv26-opdZhYct1gWSId9dUxiX" target="_blank">Books</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/12PLYdEuibMwcmDZ7KlGUjLRcl_hFVd7w" target="_blank">Previous
-                                        Year Question Papers</a></li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div id="card4" class="card reveal2">
-                    <div class="card-body">
-                        <h5 class="card-title">EC34 - Network Analysis and Control Systems</h5>
-                        <p class="card-text">Find previous year question papers, prescribed books, and notes of the
-                            above subject by clicking below.</p>
-
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Click Me
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1PRJnoHbSxawOjQOtEUelElXSSm7Pxf6C" target="_blank">Notes</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1tmbapflc__X1YqhZmtFzoKfM8hzyLV8O" target="_blank">Books</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/17aw9MaS_hz1LAYwcaLiHVLHRDtlQ6W6u" target="_blank">Previous
-                                        Year Question Papers</a></li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div id="card5" class="card reveal1">
-                    <div class="card-body">
-                        <h5 class="card-title">EC35 - Digital Design with HDL</h5>
-                        <p class="card-text">Find previous year question papers, prescribed books, and notes of the
-                            above subject by clicking below.</p>
-
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Click Me
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/10b02GGBKI4J3tzBFGeg4qkU4uInAXFcN" target="_blank">Notes</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1P4246k9XYZ6R487MR_fZ0utqRcop0hOV" target="_blank">Books</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1OEO-gnJ11VsaDVrmGZHcnGhHvyhjkxv9" target="_blank">Previous
-                                        Year Question Papers</a></li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div id="card6" class="card reveal2">
-                    <div class="card-body">
-                        <h5 class="card-title">EC36 - Analog Electronics Lab</h5>
-                        <p class="card-text">Find previous year question papers, prescribed books, and notes of the
-                            above subject by clicking below.</p>
-
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Click Me
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1F-7Bo6L71P6pvJg9zKNZ6-4-e_2I6EsW" target="_blank">Study
-                                        Material</a></li>
-
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div id="card7" class="card reveal1">
-                    <div class="card-body">
-                        <h5 class="card-title">EC37 - Digital Design and HDL Lab</h5>
-                        <p class="card-text">Find previous year question papers, prescribed books, and notes of the
-                            above subject by clicking below.</p>
-
-
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Click Me
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1c2fXa6zwm_ZYxawKUZv4dP-QYg4Fbx62" target="_blank">Study
-                                        Material</a></li>
-
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div id="card8" class="card reveal2">
-                    <div class="card-body">
-                        <h5 class="card-title">UHV38 - Universal Human Values</h5>
-                        <p class="card-text">Find previous year question papers, prescribed books, and notes of the
-                            above subject by clicking below.</p>
-
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Click Me
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1EzxqHqupFB4r8TrNVq_KaVOS3z-3hvj2" target="_blank">Study
-                                        Material</a></li>
-
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div id="card9" class="card reveal1">
-                    <div class="card-body">
-                        <h5 class="card-title">HS391 - Kannada </h5>
-                        <p class="card-text">Find previous year question papers, prescribed books, and notes of the
-                            above subject by clicking below.</p>
-
-
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Click Me
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1TAy4IOL98Es3WUwtDzDPOce1PO3tPRE9" target="_blank">Study
-                                        Material</a></li>
-
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div id="card10" class="card reveal2">
-                    <div class="card-body">
-                        <h5 class="card-title">Ability Enhancement Course</h5>
-                        <p class="card-text">Find previous year question papers, prescribed books, and notes of the
-                            above subject by clicking below. You can also add notes of your AEC by contacting me.</p>
-
-
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Click Me
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1kzZTb-urfnC1WBJ8bNL1mMKDUH6df5Iz" target="_blank">Study
-                                        Material</a></li>
-
-
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div id="card11" class="card reveal1">
-                    <div class="card-body">
-                        <h5 class="card-title">Drive Link</h5>
-
-
-
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Click Me
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/1xZ9Hb0NqmzGkAuv2Fh_4pVoF-eLOlUSb" target="_blank">Drive
-                                        Link</a></li>
-
-
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div id="card12" class="card reveal2">
-                    <div class="card-body">
-                        <h5 class="card-title">Previous Year Papers</h5>
-
-
-
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Click Me
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item"
-                                        href="https://drive.google.com/drive/folders/10_XqntcO335z81u69Cf0HBjO7VXJUnVz" target="_blank">PYQs</a>
-                                </li>
-
-
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
 
         </div>
-        <h1 id="mincal" class="reveal1 heading">Minimum Marks Calculator</h1>
-        <div class="row">
-            <div class="col">
-                <div id="card12" class="card reveal1">
-                    <div class="card-body">
-                        <h5 class="card-title">Here, you can calculate the minimum marks required for getting a required
-                            grade. </h5>
+    </div>
 
-                        <div class="row g-2 itemCenter">
-                            <div class="col-sm-6 col-lg-6 col-md-6 cgpaTitle">
-                                <strong>Enter marks in CIE for 50 :</strong>
-                            </div>
-                            <div class="col-sm-6 col-lg-6 col-md-6">
-                                <input type="number" class="form-control" placeholder="CIE" aria-label="State" required
-                                    min="0" max="50" id="minMark">
+
+    <section id="studymaterialForThirdSem" class="material bg-dark">
+        <div class="animation">
+            <h1 class="heading">Study Materials For Third Semester</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div id="card1" class="card reveal1">
+
+                        <div class="card-body">
+                            <h5 class="card-title">EC31 - Transform Techniques and Linear Programming </h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1DJYHztrGu_fZVAV-d8XfCrprXtRc-_Kz"
+                                            target="_blank">Notes</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1z4zapsOR2MvePPRhLoVJEf12pntDQekh"
+                                            target="_blank">Books</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1soWYCTILJgkuenJBYDBrJWYaWeSvpfVu"
+                                            target="_blank">Previous
+                                            Year Question Papers</a></li>
+
+                                </ul>
                             </div>
 
                         </div>
-
-                        <div class="row g-2 itemCenter">
-                            <div class="col-sm-6 col-lg-6 col-md-6 cgpaTitle">
-                                <strong>Choose the subject :</strong>
-                            </div>
-                            <div class="col-sm-6 col-lg-6 col-md-6">
-                                <select class="form-select" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default" id="minMarkSub">
-                                    <option value="1">Transform Techniques and Linear Programming</option>
-                                    <option value="1">Data Structures Using C++</option>
-                                    <option value="1">Analog Electronics Circuits</option>
-                                    <option value="1">Network Analysis and Control Systems</option>
-                                    <option value="1">Digital Design with HDL</option>
-                                    <option value="0">Analog Electronics Lab</option>
-                                    <option value="0">Digital Design and HDL Lab</option>
-                                    <option value="1">Universal Human Values</option>
-                                    <option value="0">Kannada</option>
-                                    <option value="0">Ability Enhancement Course</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-
-
-
-                        <button type="submit" class="cgMinButton btn btn-primary" id="minMarkCal">Calculate</button>
-
-                        <div style="margin:7px;" class="table-responsive  rounded ">
-                            <table class="table table-dark table-striped align-middle" id="minMarkRes">
-
-                            </table>
-                        </div>
-
 
                     </div>
                 </div>
-            </div>
-        </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card2" class="card reveal2">
+                        <div class="card-body">
+                            <h5 class="card-title">EC32 - Data Structures Using C++</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
 
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1Eq6F9fM8q7FbYGyz7dIVIsIjeU_zQwrx"
+                                            target="_blank">Notes</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1v9c1FkJ5cjWd2mE8HmHrTeAk2hbg77Xo"
+                                            target="_blank">Books</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/117ktbvRZakw15OQcjKCnLQ34eYfDZCdg"
+                                            target="_blank">Previous
+                                            Year Question Papers</a></li>
 
-        <h1 id="cgcal" class="reveal1 heading">GPA Calculator</h1>
-        <div class="row">
-            <div class="col">
-                <div id="card12" class="card reveal1">
-                    <div class="card-body">
-                        <h5 class="card-title">Here, you can calculate your expected GPA</h5>
-                        <h6 class="card-title">Enter your CIE Marks the first column and expected SEE marks
-                            in the second
-                            column within the indicated range below.</h6>
-
-                        <div class="row g-3 itemCenter">
-                            <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
-                                <strong>Transform Techniques and Linear Programming : </strong>
+                                </ul>
                             </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
-                                    aria-label="State" required min="0" max="50" id="test">
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 100)"
-                                    aria-label="Zip" required min="0" max="100">
-                            </div>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
-                                <strong>Data Structures Using C++ :</strong>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
-                                    aria-label="State" required min="0" max="50">
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 100)"
-                                    aria-label="Zip" required min="0" max="100">
-                            </div>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
-                                <strong>Analog Electronics Circuits :</strong>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
-                                    aria-label="State" required min="0" max="50">
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 100)"
-                                    aria-label="Zip" required min="0" max="100">
-                            </div>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
-                                <strong>Network Analysis and Control Systems :</strong>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
-                                    aria-label="State" required min="0" max="50">
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 100)"
-                                    aria-label="Zip" required min="0" max="100">
-                            </div>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
-                                <strong>Digital Design with HDL :</strong>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
-                                    aria-label="State" required min="0" max="50">
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 100)"
-                                    aria-label="Zip" required min="0" max="100">
-                            </div>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
-                                <strong>Universal Human Values :</strong>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
-                                    aria-label="State" required min="0" max="50">
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 100)"
-                                    aria-label="Zip" required min="0" max="50">
-                            </div>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
-                                <strong>Digital Design and HDL Lab :</strong>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
-                                    aria-label="State" required min="0" max="50">
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 50)"
-                                    aria-label="Zip" required min="0" max="50">
-                            </div>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
-                                <strong>Analog Electronics Lab : </strong>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
-                                    aria-label="State" required min="0" max="50">
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 50)"
-                                    aria-label="Zip" required min="0" max="100">
-                            </div>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
-                                <strong>Kannada :</strong>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
-                                    aria-label="State" required min="0" max="50">
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 50)"
-                                    aria-label="Zip" required min="0" max="50">
-                            </div>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
-                                <strong>Ability Enhancement Course :</strong>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
-                                    aria-label="State" required min="0" max="50">
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-md-4">
-                                <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 50)"
-                                    aria-label="Zip" required min="0" max="50">
-                            </div>
-                        </div>
-                        <button class="btn btn-primary cgMinButton" id="cgCalButton" type="submit">Calculate</button>
-                        <div style="margin:7px;" class="table-responsive  rounded ">
-                            <table class="table table-dark table-striped align-middle" id="gpaResult">
-
-                            </table>
-                        </div>
-                        <div style="margin:7px;" class="" id="result">
 
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card3" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">EC33 - Analog Electronics Circuits</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1Y0wwjgpQCna4nVQEVUZI6kq14SDoXlV5"
+                                            target="_blank">Notes</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/18K4axoohv26-opdZhYct1gWSId9dUxiX"
+                                            target="_blank">Books</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/12PLYdEuibMwcmDZ7KlGUjLRcl_hFVd7w"
+                                            target="_blank">Previous
+                                            Year Question Papers</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card4" class="card reveal2">
+                        <div class="card-body">
+                            <h5 class="card-title">EC34 - Network Analysis and Control Systems</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1PRJnoHbSxawOjQOtEUelElXSSm7Pxf6C"
+                                            target="_blank">Notes</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1tmbapflc__X1YqhZmtFzoKfM8hzyLV8O"
+                                            target="_blank">Books</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/17aw9MaS_hz1LAYwcaLiHVLHRDtlQ6W6u"
+                                            target="_blank">Previous
+                                            Year Question Papers</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card5" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">EC35 - Digital Design with HDL</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/10b02GGBKI4J3tzBFGeg4qkU4uInAXFcN"
+                                            target="_blank">Notes</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1P4246k9XYZ6R487MR_fZ0utqRcop0hOV"
+                                            target="_blank">Books</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1OEO-gnJ11VsaDVrmGZHcnGhHvyhjkxv9"
+                                            target="_blank">Previous
+                                            Year Question Papers</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card6" class="card reveal2">
+                        <div class="card-body">
+                            <h5 class="card-title">EC36 - Analog Electronics Lab</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1F-7Bo6L71P6pvJg9zKNZ6-4-e_2I6EsW"
+                                            target="_blank">Study
+                                            Material</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card7" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">EC37 - Digital Design and HDL Lab</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1c2fXa6zwm_ZYxawKUZv4dP-QYg4Fbx62"
+                                            target="_blank">Study
+                                            Material</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card8" class="card reveal2">
+                        <div class="card-body">
+                            <h5 class="card-title">UHV38 - Universal Human Values</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1EzxqHqupFB4r8TrNVq_KaVOS3z-3hvj2"
+                                            target="_blank">Study
+                                            Material</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card9" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">HS391 - Kannada </h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1TAy4IOL98Es3WUwtDzDPOce1PO3tPRE9"
+                                            target="_blank">Study
+                                            Material</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card10" class="card reveal2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ability Enhancement Course</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below. You can also add notes of your AEC by contacting me.
+                            </p>
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1kzZTb-urfnC1WBJ8bNL1mMKDUH6df5Iz"
+                                            target="_blank">Study
+                                            Material</a></li>
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card11" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">Drive Link</h5>
+
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/1xZ9Hb0NqmzGkAuv2Fh_4pVoF-eLOlUSb"
+                                            target="_blank">Drive
+                                            Link</a></li>
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card12" class="card reveal2">
+                        <div class="card-body">
+                            <h5 class="card-title">Previous Year Papers</h5>
+
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/folders/10_XqntcO335z81u69Cf0HBjO7VXJUnVz"
+                                            target="_blank">PYQs</a>
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
+            <h1 id="mincal3" class="reveal1 heading">Minimum Marks Calculator For Third Semester</h1>
+            <div class="row">
+                <div class="col">
+                    <div id="card12" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">Here, you can calculate the minimum marks required for getting a
+                                required
+                                grade. </h5>
+
+                            <div class="row g-2 itemCenter">
+                                <div class="col-sm-6 col-lg-6 col-md-6 cgpaTitle">
+                                    <strong>Enter marks in CIE for 50 :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-6 col-md-6">
+                                    <input type="number" class="form-control" placeholder="CIE" aria-label="State"
+                                        required min="0" max="50" id="minMark">
+                                </div>
+
+                            </div>
+
+                            <div class="row g-2 itemCenter">
+                                <div class="col-sm-6 col-lg-6 col-md-6 cgpaTitle">
+                                    <strong>Choose the subject :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-6 col-md-6">
+                                    <select class="form-select" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" id="minMarkSub">
+                                        <option value="1">Transform Techniques and Linear Programming</option>
+                                        <option value="1">Data Structures Using C++</option>
+                                        <option value="1">Analog Electronics Circuits</option>
+                                        <option value="1">Network Analysis and Control Systems</option>
+                                        <option value="1">Digital Design with HDL</option>
+                                        <option value="0">Analog Electronics Lab</option>
+                                        <option value="0">Digital Design and HDL Lab</option>
+                                        <option value="1">Universal Human Values</option>
+                                        <option value="0">Kannada</option>
+                                        <option value="0">Ability Enhancement Course</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <button type="submit" class="cgMinButton btn btn-primary" id="minMarkCal">Calculate</button>
+
+                            <div style="margin:7px;" class="table-responsive  rounded ">
+                                <table class="table table-dark table-striped align-middle" id="minMarkRes">
+
+                                </table>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h1 id="cgcal3" class="reveal1 heading">GPA Calculator For Third Semester</h1>
+            <div class="row">
+                <div class="col">
+                    <div id="card12" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">Here, you can calculate your expected GPA</h5>
+                            <h6 class="card-title">Enter your CIE Marks the first column and expected SEE marks
+                                in the second
+                                column within the indicated range below.</h6>
+
+                            <div class="row g-3 itemCenter">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Transform Techniques and Linear Programming : </strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50" id="test">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 100)"
+                                        aria-label="Zip" required min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Data Structures Using C++ :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 100)"
+                                        aria-label="Zip" required min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Analog Electronics Circuits :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 100)"
+                                        aria-label="Zip" required min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Network Analysis and Control Systems :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 100)"
+                                        aria-label="Zip" required min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Digital Design with HDL :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 100)"
+                                        aria-label="Zip" required min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Universal Human Values :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 100)"
+                                        aria-label="Zip" required min="0" max="50">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Digital Design and HDL Lab :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 50)"
+                                        aria-label="Zip" required min="0" max="50">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Analog Electronics Lab : </strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 50)"
+                                        aria-label="Zip" required min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Kannada :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 50)"
+                                        aria-label="Zip" required min="0" max="50">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Ability Enhancement Course :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks" placeholder="SEE (for 50)"
+                                        aria-label="Zip" required min="0" max="50">
+                                </div>
+                            </div>
+                            <button class="btn btn-primary cgMinButton" id="cgCalButton"
+                                type="submit">Calculate</button>
+                            <div style="margin:7px;" class="table-responsive  rounded ">
+                                <table class="table table-dark table-striped align-middle" id="gpaResult">
+
+                                </table>
+                            </div>
+                            <div style="margin:7px;" class="" id="result">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="text reveal1">Even you can upload your notes here. To upload, contact me in below given links.
+            </div>
+            <div class="text">Still more features are yet to come..... Stay Tuned!!!</div>
         </div>
-
-
-        <div class="text reveal1">Even you can upload your notes here. To upload, contact me in below given links.</div>
-        <div class="text">Still more features are yet to come..... Stay Tuned!!!</div>
-
     </section>
+    <section id="studymaterialForFourthSem" class="material bg-dark semDisplay">
+
+        <div class="animation">
+            <h1 class="heading">Study Materials For Fourth Semester</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div id="card1" class="card reveal1">
+
+                        <div class="card-body">
+                            <h5 class="card-title">EC41 - Numerical Methods And Probability Models </h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1WhGz0esNM0ubbrve2xxNLARmjHLTPHfQ"
+                                            target="_blank">Notes</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1FzjgNw_HG1xs53kgSpDnHKdtn-6tVfoc"
+                                            target="_blank">Books</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1SAlk7-YiFcZS9ymbUXdMgeYEL4mrGXLA"
+                                            target="_blank">Previous
+                                            Year Question Papers</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card2" class="card reveal2">
+                        <div class="card-body">
+                            <h5 class="card-title">EC42 - Engineering Electromagnetics</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1GzLwG6swJ2SO4EuNzLgFTZMDVmUBk5Jc"
+                                            target="_blank">Notes</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1v53Dl_-bGr9LtxcB1cN9N6nO3_fe8QsA"
+                                            target="_blank">Books</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1er10QERtd8AMKfvR3XO--qUxekFJ9Xbt"
+                                            target="_blank">Previous
+                                            Year Question Papers</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card3" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">EC43 - Communication System-I</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1vxxhfnoCRi35uRPaUOywvl1g_P1c7efQ"
+                                            target="_blank">Notes</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1cvfZybDXeWdeaRxXX7iEBD6KOCMlZjnq"
+                                            target="_blank">Books</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1V-FXqAHT7-OsrAnp6e0o0_eXYxiFrqh6"
+                                            target="_blank">Previous
+                                            Year Question Papers</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card4" class="card reveal2">
+                        <div class="card-body">
+                            <h5 class="card-title">EC44 - Microprocessors</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1uhIV6gcjftOABzf8uwG_Qd_OzCWmY25I"
+                                            target="_blank">Notes</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/18WtdUPgmjz-zaM8lmdtT0hoWl_exLfec"
+                                            target="_blank">Books</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1RW6qc1aos9v1wFk0nJDWJHDuHBjZOg7O"
+                                            target="_blank">Previous
+                                            Year Question Papers</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card5" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">EC45 - Signal Processing</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/13vWx40DbG9yKkbThN0f6M8yAgtxMSUBC"
+                                            target="_blank">Notes</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1oMcZMFKKw0hcjFGXNfr9h6V_RSPePPMg"
+                                            target="_blank">Books</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1oELEebJ8T5TTKl5MZmYeULAjzPrMdYwc"
+                                            target="_blank">Previous
+                                            Year Question Papers</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card6" class="card reveal2">
+                        <div class="card-body">
+                            <h5 class="card-title">ECL46 - Communication System Lab-I</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1q4shNqJcZcKpVM04GsPIzuFwCx5mjIzY"
+                                            target="_blank">Study
+                                            Material</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card7" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">ECL47 - Microprocessors Lab</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/180syuarkM9Ml7PA9VUXJfH2bwf3nN_F6"
+                                            target="_blank">Study
+                                            Material</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card8" class="card reveal2">
+                        <div class="card-body">
+                            <h5 class="card-title">ECL48 - Signal Processing Lab</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1ZM0caNbbLix6GJD1lRbGMAC44FK-LD5A"
+                                            target="_blank">Study
+                                            Material</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card9" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">HS492 - Constitution of India and Professional Ethics</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below.</p>
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1adZc0vsOYISa8c74LR_mgesgjASNe7GJ"
+                                            target="_blank">Study
+                                            Material</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card10" class="card reveal2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ability Enhancement Course</h5>
+                            <p class="card-text">Find previous year question papers, prescribed books, and notes of the
+                                above subject by clicking below. You can also add notes of your AEC by contacting me.
+                            </p>
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/13bBwDB8wqbzvUNVtTn6-2-eFXtmu5F5m"
+                                            target="_blank">Study
+                                            Material</a></li>
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card11" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">Drive Link</h5>
+
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1mmgIou8Q9nWNoHSYiN97-Q3PxYVcMZ2x"
+                                            target="_blank">Drive
+                                            Link</a></li>
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div id="card12" class="card reveal2">
+                        <div class="card-body">
+                            <h5 class="card-title">Previous Year Papers</h5>
+
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Click Me
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://drive.google.com/drive/u/0/folders/1NAULgzjlODeaRyQ6ifi6CDRxPun8l4tL"
+                                            target="_blank">PYQs</a>
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <h1 id="mincal4" class="reveal1 heading">Minimum Marks Calculator For Fourth Semester</h1>
+            <div class="row">
+                <div class="col">
+                    <div id="card12" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">Here, you can calculate the minimum marks required for getting a
+                                required
+                                grade. </h5>
+
+                            <div class="row g-2 itemCenter">
+                                <div class="col-sm-6 col-lg-6 col-md-6 cgpaTitle">
+                                    <strong>Enter marks in CIE for 50 :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-6 col-md-6">
+                                    <input type="number" class="form-control" placeholder="CIE" aria-label="State"
+                                        required min="0" max="50" id="minMark4">
+                                </div>
+
+                            </div>
+
+                            <div class="row g-2 itemCenter">
+                                <div class="col-sm-6 col-lg-6 col-md-6 cgpaTitle">
+                                    <strong>Choose the subject :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-6 col-md-6">
+                                    <select class="form-select" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" id="minMarkSub4">
+                                        <option value="1">Numerical Methods And Probability Models</option>
+                                        <option value="1">Engineering Electromagnetics</option>
+                                        <option value="1">Communication System-I</option>
+                                        <option value="1">Microprocessors</option>
+                                        <option value="1">Signal Processing</option>
+                                        <option value="0">Communication System Lab-I</option>
+                                        <option value="0">Microprocessors Lab</option>
+                                        <option value="0">Signal Processing Lab</option>
+                                        <option value="0">Constitution of India and Professional </option>
+                                        <option value="0">Ability Enhancement Course</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <button type="submit" class="cgMinButton btn btn-primary" id="minMarkCal4">Calculate</button>
+
+                            <div style="margin:7px;" class="table-responsive  rounded ">
+                                <table class="table table-dark table-striped align-middle" id="minMarkRes4">
+
+                                </table>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h1 id="cgcal4" class="reveal1 heading">GPA Calculator For Fourth Semester</h1>
+            <div class="row">
+                <div class="col">
+                    <div id="card12" class="card reveal1">
+                        <div class="card-body">
+                            <h5 class="card-title">Here, you can calculate your expected GPA</h5>
+                            <h6 class="card-title">Enter your CIE Marks the first column and expected SEE marks
+                                in the second
+                                column within the indicated range below.</h6>
+
+                            <div class="row g-3 itemCenter">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Numerical Methods And Probability Models : </strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50" id="test">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="SEE (for 100)"
+                                        aria-label="Zip" required min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Engineering Electromagnetics :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="SEE (for 100)"
+                                        aria-label="Zip" required min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Communication System-I :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="SEE (for 100)"
+                                        aria-label="Zip" required min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Microprocessors :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="SEE (for 100)"
+                                        aria-label="Zip" required min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Signal Processing :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="SEE (for 100)"
+                                        aria-label="Zip" required min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Communication System Lab-I :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="SEE (for 50)"
+                                        aria-label="Zip" required min="0" max="50">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Microprocessors Lab :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="SEE (for 50)"
+                                        aria-label="Zip" required min="0" max="50">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Signal Processing Lab : </strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="SEE (for 50)"
+                                        aria-label="Zip" required min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Constitution of India and Professional :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="SEE (for 50)"
+                                        aria-label="Zip" required min="0" max="50">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-lg-4 col-md-4 cgpaTitle">
+                                    <strong>Ability Enhancement Course :</strong>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="CIE (for 50)"
+                                        aria-label="State" required min="0" max="50">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-md-4">
+                                    <input type="number" class="form-control gpaCalMarks4" placeholder="SEE (for 50)"
+                                        aria-label="Zip" required min="0" max="50">
+                                </div>
+                            </div>
+                            <button class="btn btn-primary cgMinButton" id="cgCalButton4"
+                                type="submit">Calculate</button>
+                            <div style="margin:7px;" class="table-responsive  rounded ">
+                                <table class="table table-dark table-striped align-middle" id="gpaResult4">
+
+                                </table>
+                            </div>
+                            <div style="margin:7px;" class="" id="result4">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="text reveal1">Even you can upload your notes here. To upload, contact me in below given links.
+            </div>
+            <div class="text">Still more features are yet to come..... Stay Tuned!!!</div>
+        </div>
+    </section>
+
+
+
+
+
+
     <div id="contact" class="contact">
 
 
         <div class="context">Made with passion by Satwik Kamath <a class="icon"
-                href="https://www.instagram.com/satwik_kamath/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-
-            <a class="icon" href="https://www.linkedin.com/in/satwik-kamath-87b2a1229" target="_blank"><i class="fa fa-linkedin-square"
-                    aria-hidden="true"></i></a> and Shreesha T.P <a class="icon"
-                href="https://instagram.com/shreeshatp83?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fa fa-instagram"
+                href="https://www.instagram.com/satwik_kamath/" target="_blank"><i class="fa fa-instagram"
                     aria-hidden="true"></i></a>
+
+            <a class="icon" href="https://www.linkedin.com/in/satwik-kamath-87b2a1229" target="_blank"><i
+                    class="fa fa-linkedin-square" aria-hidden="true"></i></a> and Shreesha T.P <a class="icon"
+                href="https://instagram.com/shreeshatp83?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><i
+                    class="fa fa-instagram" aria-hidden="true"></i></a>
 
             <a class="icon" href="https://www.linkedin.com/in/shreesha-t-p-71bb9b25b" target="_blank"><i
                     class="fa fa-linkedin-square" aria-hidden="true"></i></a>
