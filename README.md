@@ -6,7 +6,7 @@ Notronics is a specialized educational platform designed exclusively for student
 ## Key Features:
 
 ### Comprehensive Notes Repository 📚
-Notronics boasts an extensive collection of notes for every subject in the Electronics and Communication curriculum. 📝
+Notronics boasts an extensive collection of high-quality notes for every subject in the Electronics and Communication curriculum. These notes are meticulously compiled and shared by students and faculty members, making it a valuable resource for exam preparation and coursework. 📝
 
 ### GPA Calculator 📊
 Notronics simplifies the process of calculating your Grade Point Average (GPA). Students can input their course grades, and the platform will automatically compute their GPA. This feature is incredibly useful for tracking academic progress and setting goals for improvement. 🎯
@@ -15,5 +15,11 @@ Notronics simplifies the process of calculating your Grade Point Average (GPA). 
 To help students set realistic academic targets, Notronics offers a Minimum Marks Calculator. By inputting the grade they aim to achieve, students can find out the minimum score required in exams and assignments to reach their desired grade. This tool can be an invaluable resource for efficient and effective study planning. 📈
 
 ### User-Friendly Interface 🖥️
-Notronics features an intuitive and user-friendly interface, making it accessible and easy to navigate for students of all levels. The platform is designed to streamline the process of finding
+Notronics features an intuitive and user-friendly interface, making it accessible and easy to navigate for students of all levels. The platform is designed to streamline the process of finding notes, calculating GPAs, and determining the minimum marks needed for specific grades. 🚀
+
+## Website Link:
+[Explore Notronics](https://satwikkamath.github.io/notronics.github.io/)
+
+Notronics is your one-stop destination for academic success in Electronics and Communication. 📡📚📈🎓
+
 
