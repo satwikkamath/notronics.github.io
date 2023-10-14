@@ -20,6 +20,6 @@ Notronics features an intuitive and user-friendly interface, making it accessibl
 ## Website Link:
 [Explore Notronics](https://satwikkamath.github.io/notronics.github.io/)
 
-Notronics is your one-stop destination for academic success in Electronics and Communication. 📡📚📈🎓
+
 
 
